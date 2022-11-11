@@ -12,10 +12,14 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100vh;
+  background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: left top, bottom right;
 }
 @media (min-width: 600px) {
   body {
     justify-content: center;
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
   }
 }
 body main {
@@ -62,11 +66,11 @@ body main .intro p.subtitle {
 }
 body main .rating-container {
   margin-bottom: 55px;
-  width: 90%;
-  margin-left: auto;
 }
 @media (min-width: 600px) {
   body main .rating-container {
+    width: 90%;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
