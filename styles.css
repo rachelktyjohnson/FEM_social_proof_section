@@ -114,6 +114,7 @@ body main .rating-container .ratings p {
     display: flex;
     grid-gap: 25px;
     margin-top: 15px;
+    align-items: flex-start;
   }
 }
 body main .card-container .card {
@@ -123,9 +124,6 @@ body main .card-container .card {
   margin-bottom: 15px;
 }
 @media (min-width: 600px) {
-  body main .card-container .card {
-    height: 225px;
-  }
   body main .card-container .card:nth-of-type(2) {
     margin-top: 15px;
   }
