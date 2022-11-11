@@ -1,7 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main {
+  max-width: 330px;
+  margin: 80px 20px;
+}
+@media (min-width: 600px) {
+  body main {
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 600px) {
+  body main .intro {
+    text-align: left;
+    width: 65%;
+  }
+}
+body main .intro h1 {
+  font-size: 2.5rem;
+  color: #502050;
+  line-height: 0.8;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+body main .intro p.subtitle {
+  margin: 25px 0 40px;
+  font-size: 1.1rem;
+  color: #937b92;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@media (min-width: 600px) {
+  body main .intro p.subtitle {
+    font-size: 0.85rem;
+  }
+}
+body main .rating-container {
+  margin-bottom: 55px;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  body main .rating-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+body main .rating-container .ratings {
+  margin: 15px 0;
+  padding: 15px;
+  background: #f7f2f7;
+  border-radius: 10px;
+}
+@media (min-width: 600px) {
+  body main .rating-container .ratings {
+    display: flex;
+    align-self: center;
+    width: 80%;
+    margin: 5px 0;
+  }
+  body main .rating-container .ratings:nth-of-type(1) {
+    align-self: start;
+  }
+  body main .rating-container .ratings:nth-of-type(3) {
+    align-self: end;
+  }
+}
+body main .rating-container .ratings p {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #502050;
+  font-size: 1.05rem;
+}
+@media (min-width: 600px) {
+  body main .rating-container .ratings p {
+    margin-top: 0;
+    margin-left: 25px;
+  }
+}
+@media (min-width: 600px) {
+  body main .card-container {
+    grid-column: 1/3;
+  }
+}
+body main .card-container .card {
+  background: #502050;
+  padding: 35px 25px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+body main .card-container .card .rater {
+  display: flex;
+  align-items: center;
+}
+body main .card-container .card .rater img {
+  border-radius: 100%;
+  height: 40px;
+  margin-right: 25px;
+}
+body main .card-container .card .rater .rater-details {
+  text-align: left;
+}
+body main .card-container .card .rater .rater-details .card-name {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 500;
+}
+body main .card-container .card .rater .rater-details .verified-buyer {
+  font-size: 1.1rem;
+  margin-top: 5px;
+  font-weight: 300;
+  color: #ee68a4;
+}
+body main .card-container .card p.quote {
+  text-align: left;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */
